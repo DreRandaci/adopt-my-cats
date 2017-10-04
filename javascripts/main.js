@@ -1,4 +1,6 @@
 'use strict';
-console.log('main working');
 
-$('body').html('<h3>jQuery working</h3>');
+require('./ajax');
+require('./events');
+
+// ajaxData.getCats();
