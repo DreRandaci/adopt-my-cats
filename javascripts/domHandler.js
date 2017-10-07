@@ -5,8 +5,7 @@ const buildDomString = (cats) => {
     $('#disableBtn').show();
     let domString = '';
     cats.forEach((cat) => {
-        domString += `<div class="cat-card col-md-4">`;
-        domString +=    `<div class="thumbnail">`;
+        domString += `<div class="cat-card col-md-4 thumbnail">`;
         domString +=        `<div class="image-container">`;
         domString +=            `<img src="${cat.imageUrl}">`;
         domString +=        `</div>`;
@@ -20,7 +19,6 @@ const buildDomString = (cats) => {
             domString +=        `<p> Toes: ${cat.numberOfToes}</p>`;  
         }
         domString +=        `</div>`;
-        domString +=    `</div>`;
         domString += `</div> `;
     });
     writeToDom(domString);

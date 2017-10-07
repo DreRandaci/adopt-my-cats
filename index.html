@@ -16,16 +16,18 @@
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <div class='container'>
-            <h1 class='jumbotron'>Adopt My Cats</h1>
-            <div id='inputDiv'>
-                <input type="text" id='input' class='inputBox' placeholder="how many cats do you have?">
-                <button id='btn' class='btn btn-primary'>Clicky</button>
-                <button id='disableBtn' class='btn btn-danger'>Get rid of all the Handi-cats</button>
+        <div class='container-fluid'>
+            <h1 class='jumbotron background'>Adopt My Cats</h1>
+            <div id='inputDiv' class='center-block'>
+                <input type="text" id='input' class='margin-bottom inputBox text-center center-block' placeholder="how many cats do you have?">
+                <button id='btn' class='btn center-block'>Show me Cats</button>
+                <div class='text-center'>
+                    <button id='disableBtn' class='btn center-block'>Get rid of all the Handi-cats</button>
+                </div>
             </div>
         </div>
         <div class='container'>
-            <div class='row'>
+            <div class='row col-md-offset-1'>
                 <div id='catCardOutput'></div>
             </div>
         </div>
